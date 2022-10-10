@@ -8,7 +8,8 @@ public abstract class Prodotto {
 	private double prezzo;
 	private double iva;
 	
-	public Prodotto(int codice, String nome, String marca, double prezzo, double iva) {
+	public Prodotto(int codice, String nome, String marca, double prezzo, 
+			double iva) {
 		super();
 		this.codice = codice;
 		this.nome = nome;
