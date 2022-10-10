@@ -43,5 +43,14 @@ public abstract class Prodotto {
 	public int getCodice() {
 		return codice;
 	}
+	
+	private double getPrezzoConIva() {
+		double importoIva = (this.getPrezzo() * this.getIva())/100;
+		return this.getPrezzo() + importoIva;
+	}
+	
+	public String prezzoConIvaFormat() {
+		 return String.format("Il prezzo TOTALE (prezzo + IVA) è: %.2f €", this.getPrezzoConIva());
+	}
 
 }
