@@ -50,7 +50,12 @@ public abstract class Prodotto {
 	}
 	
 	public String prezzoConIvaFormat() {
-		 return String.format("Il prezzo TOTALE (prezzo + IVA) è: %.2f €", this.getPrezzoConIva());
+		 return String.format("prezzo TOTALE (prezzo + IVA) è: %.2f €", this.getPrezzoConIva());
+	}
+	@Override
+	public String toString() {
+		return "codice: " + codice + " nome: " + nome + " marca: " +
+				marca + " prezzo: " + prezzo + " iva: " + iva + " " + prezzoConIvaFormat();
 	}
 
 }

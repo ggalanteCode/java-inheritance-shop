@@ -22,4 +22,10 @@ public class Cuffia extends Prodotto {
 		return wireless;
 	}
 
+	@Override
+	public String toString() {
+		return "cuffia " + super.toString() + " caratteristiche cuffia: colore: " 
+				+ colore + " wireless: " + wireless;
+	}
+
 }

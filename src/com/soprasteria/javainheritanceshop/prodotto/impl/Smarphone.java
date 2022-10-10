@@ -25,8 +25,11 @@ public class Smarphone extends Prodotto {
 	public void setMemoria(double memoria) {
 		this.memoria = memoria;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "smartphone " + super.toString() + " caratteristiche smartphone: codiceIMEI: " 
+				+ codiceIMEI + " memoria: " + memoria;
+	}
 	
 }
