@@ -95,6 +95,10 @@ public class Catalogo {
 					break;
 			}
 		}
+		
+		for(int j = 0; j < prodotti.length; j++) {
+			System.out.println(prodotti[j]);
+		}
 	}
 
 }
